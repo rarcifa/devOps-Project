@@ -75,7 +75,7 @@
 		<repository>
 			<id>central</id>
 			<name>artifactory-releases</name>
-			<url>http://18.204.173.218:8081/artifactory/devops-libs-release-local</url>
+			<url>http://18.204.173.218:8082/artifactory/devops-libs-release-local</url>
 		</repository>
 	</distributionManagement>
 
