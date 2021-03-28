@@ -4,4 +4,5 @@ import com.devops.devops.dto.Game;
 
 public interface GameRepository extends JpaRepository<Game, Integer> {
 
+
 }

@@ -66,8 +66,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.4.3</version>
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>artifactory-releases</name>
+			<url>http://18.204.173.218:8081/artifactory/devops-libs-release-local</url>
+		</repository>
+	</distributionManagement>
 
 </project>
