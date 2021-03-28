@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import org.testng.annotations.Test;
 
 import java.util.Optional;
 
@@ -22,6 +23,7 @@ public class GameController {
     GameRepository gamesRepository;
 
     // get all Games pageable
+    @Test
     @GetMapping(value="/games", produces= MediaType.APPLICATION_JSON_VALUE)
     public Page<Game> getAllGames(Pageable pageable) {
         //return all Games
@@ -30,6 +32,7 @@ public class GameController {
 
 
     // get Game by id
+    @Test
     @GetMapping("games/{id}")
     public Game getGameById(@PathVariable int id) {
         // return Game by id
@@ -41,6 +44,7 @@ public class GameController {
     }
 
     //Delete Game by id
+    @Test
     @DeleteMapping("games/{id}")
     public void deleteGameById(@PathVariable int id) {
 
