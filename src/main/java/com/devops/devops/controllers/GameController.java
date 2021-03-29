@@ -30,7 +30,6 @@ public class GameController {
         return gamesRepository.findAll(pageable);
     }
 
-
     // get Game by id
     @Test
     @GetMapping("games/{id}")
