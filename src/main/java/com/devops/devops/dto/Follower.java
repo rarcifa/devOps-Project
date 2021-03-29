@@ -10,8 +10,7 @@ public class Follower implements Serializable {
     private Integer f_id;
     private Integer follower_id;
     private Integer follower_userid;
-
-    d
+    
     public Follower() {
     }
 
