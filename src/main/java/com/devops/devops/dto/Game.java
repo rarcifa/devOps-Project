@@ -47,6 +47,7 @@ public class Game implements Serializable {
         this.igdbscore = igdbscore;
     }
 
+
     // Setters
     public Integer getId() {
         return id;
