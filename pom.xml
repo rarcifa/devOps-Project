@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.devops</groupId>
 	<artifactId>webapp</artifactId>
+	<version>0.0.1-RELEASE</version>
 	<name>webapp</name>
 	<description>devops project</description>
 	<properties>
@@ -62,6 +63,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>webapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
