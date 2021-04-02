@@ -42,14 +42,16 @@ public class DevopsApplication extends SpringBootServletInitializer {
 
 		@GetMapping(value="/games", produces= MediaType.APPLICATION_JSON_VALUE)
 		public Page<Game> getAllGames(Pageable pageable) {
+
 			//return all Games
 			return gamesRepository.findAll(pageable);
 		}
 
-		// get Game by id
+		// get Game by ID
 		@GetMapping("games/{id}")
 		public Game getGameById(@PathVariable int id) {
-			// return Game by id
+
+			// return Game by ID
 			Optional<Game> foundGame = gamesRepository.findById(id);
 			if(foundGame.isPresent())
 				return foundGame.get();
@@ -57,12 +59,12 @@ public class DevopsApplication extends SpringBootServletInitializer {
 				throw new GameNotFoundException("Unable to find Game with id: " + id);
 		}
 
-		//Delete Game by id
+		//Delete Game by ID
 		@DeleteMapping("games/{id}")
 		public void deleteGameById(@PathVariable int id) {
 
 			try {
-				// delete by id
+				// delete by ID
 				gamesRepository.deleteById(id);
 			}
 			catch (EmptyResultDataAccessException e) {
