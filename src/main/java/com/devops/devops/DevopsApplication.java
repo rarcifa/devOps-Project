@@ -43,7 +43,7 @@ public class DevopsApplication extends SpringBootServletInitializer {
 		@GetMapping(value="/games", produces= MediaType.APPLICATION_JSON_VALUE)
 		public Page<Game> getAllGames(Pageable pageable) {
 
-			//return all Games
+			//return all the Games
 			return gamesRepository.findAll(pageable);
 		}
 
