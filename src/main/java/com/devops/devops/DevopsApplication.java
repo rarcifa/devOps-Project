@@ -47,11 +47,11 @@ public class DevopsApplication extends SpringBootServletInitializer {
 			return gamesRepository.findAll(pageable);
 		}
 
-		// get Game by ids
+		// get Game by id
 		@GetMapping("games/{id}")
 		public Game getGameById(@PathVariable int id) {
 
-			// return Game by ids
+			// return Game by id
 			Optional<Game> foundGame = gamesRepository.findById(id);
 			if(foundGame.isPresent())
 				return foundGame.get();
