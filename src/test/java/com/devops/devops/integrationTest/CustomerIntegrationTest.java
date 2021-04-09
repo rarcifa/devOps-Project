@@ -10,7 +10,7 @@ import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertNotNull;
 
 public class CustomerIntegrationTest {
-
+    // test comment
     @Rule
     public EntityManagerProvider provider = EntityManagerProvider.withUnit("integration-test");
 
